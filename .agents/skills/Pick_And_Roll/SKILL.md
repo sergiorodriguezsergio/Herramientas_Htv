@@ -4,7 +4,7 @@ Esta Skill automatiza la actualización del archivo Excel de rotulación deporti
 
 ## Automatización Principal
 - **Script**: `scripts/actualizar_pick_and_roll.py`
-- **Archivo Destino**: `c:\Users\User\Desktop\DATOS PICK AND ROLL.xlsx`
+- **Archivo Destino**: `\\172.16.80.129\g\EXCEL PROGRAMAS\PICK AND ROLL\DATOS PICK AND ROLL.xlsx`
 
 ## Reglas de Formato
 - **MAYÚSCULAS**: Todo el texto de equipos y resultados.

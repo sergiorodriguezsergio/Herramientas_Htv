@@ -56,7 +56,7 @@ def update_pick_and_roll(excel_path, data_dict):
 
 if __name__ == "__main__":
     # Este bloque es para pruebas o ejecución directa
-    PATH_EXCEL = r'c:\Users\User\Desktop\DATOS PICK AND ROLL.xlsx'
+    PATH_EXCEL = r'\\172.16.80.129\g\EXCEL PROGRAMAS\PICK AND ROLL\DATOS PICK AND ROLL.xlsx'
     # Ejemplo de estructura de datos
     # data = { "N1 ANDALUZA": [("EQUIPO A - EQUIPO B", "01/01/24 18:00")], ... }
     print("Módulo de actualización Pick and Roll listo.")
