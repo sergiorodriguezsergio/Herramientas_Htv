@@ -1,0 +1,12 @@
+# Ignorar descargas masivas y modelos
+ffmpeg-master-latest-win64-gpl/
+ffmpeg.zip
+model/
+model.zip
+output.txt
+*.mp3
+*.wav
+*.mp4
+noticia_generada.json
+temp_audio.wav
+__pycache__/
