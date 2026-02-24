@@ -1,4 +1,4 @@
-# Skill: Deportes (Pick and Roll)
+# Skill: Pick_And_Roll
 
 Esta Skill automatiza la actualización del archivo Excel de rotulación deportiva de Huelva TV.
 
