@@ -1,3 +1,9 @@
+# Seguridad y entornos
+.env
+.venv/
+.agents/
+.pyre/
+
 # Ignorar descargas masivas y modelos
 ffmpeg-master-latest-win64-gpl/
 ffmpeg.zip

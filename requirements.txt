@@ -4,3 +4,5 @@ watchdog==6.0.0
 openpyxl==3.1.5
 requests==2.32.5
 audioop-lts; python_version >= "3.13"
+openai
+python-dotenv
