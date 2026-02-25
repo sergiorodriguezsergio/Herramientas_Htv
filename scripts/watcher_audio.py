@@ -5,7 +5,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 # Configuración
-CARPETA_VIGILADA = r"C:\Users\Equipo1\Desktop\AUDIO"
+CARPETA_VIGILADA = os.path.join(os.path.expanduser("~"), "Desktop", "AUDIO")
 EXTENSIONES_PERMITIDAS = (".mp3", ".wav")
 # La ruta al script o comando que lance el workflow de Antigravity
 # De momento lo imprimiremos hasta que definamos el comando exacto para el workflow

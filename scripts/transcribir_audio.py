@@ -15,9 +15,10 @@ import json
 from pydub import AudioSegment
 from vosk import Model, KaldiRecognizer, SetLogLevel
 
-# Configuración de rutas
-# FFMPEG_PATH = r"C:\Users\Equipo1\Documents\Antigravity\Projects\Herramientas_Htv\ffmpeg-master-latest-win64-gpl\bin"
-# os.environ["PATH"] += os.pathsep + FFMPEG_PATH
+# Configuración de rutas relativa al script
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FFMPEG_PATH = os.path.join(BASE_DIR, "ffmpeg-master-latest-win64-gpl", "bin")
+os.environ["PATH"] += os.pathsep + FFMPEG_PATH
 
 def transcribir(input_mp3, output_txt):
     SetLogLevel(-1) # Silenciar logs de Vosk
