@@ -1,3 +1,13 @@
+try:
+    import audioop
+except ImportError:
+    try:
+        import audioop_lts as audioop
+        import sys
+        sys.modules["audioop"] = audioop
+    except ImportError:
+        pass
+
 import sys
 import os
 import wave
@@ -6,8 +16,8 @@ from pydub import AudioSegment
 from vosk import Model, KaldiRecognizer, SetLogLevel
 
 # Configuración de rutas
-FFMPEG_PATH = r"C:\Users\User\Documents\Antigravity\Projects\Herramientas_Htv\ffmpeg-master-latest-win64-gpl\bin"
-os.environ["PATH"] += os.pathsep + FFMPEG_PATH
+# FFMPEG_PATH = r"C:\Users\Equipo1\Documents\Antigravity\Projects\Herramientas_Htv\ffmpeg-master-latest-win64-gpl\bin"
+# os.environ["PATH"] += os.pathsep + FFMPEG_PATH
 
 def transcribir(input_mp3, output_txt):
     SetLogLevel(-1) # Silenciar logs de Vosk

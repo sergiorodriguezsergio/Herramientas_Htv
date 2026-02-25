@@ -1,5 +1,6 @@
 ---
 description: Procesa un archivo de audio (.mp3 o .wav), transcribe su contenido, redacta una noticia periodística (estilo Huelva TV) y la publica en WordPress.
+// turbo-all
 ---
 
 Este workflow se encarga de todo el flujo automatizado: desde un archivo de audio crudo hasta el artículo final publicado en la web.
@@ -9,8 +10,8 @@ Asegúrate de recibir la ruta completa del audio como parámetro. Por ejemplo, a
 1. **Obtener la ruta del audio:** Confirma la ruta absoluta del archivo de audio que el usuario te ha pasado o que el watcher ha detectado.
 
 2. **Ejecutar transcripción local:**
-   - Ejecuta el siguiente script en la terminal (asegúrate de usar la ruta base del proyecto `C:\Users\User\Documents\Antigravity\Projects\Herramientas_Htv`):
-   `python scripts\transcribir_audio.py "RUTA_DEL_AUDIO"`
+   - Ejecuta el siguiente script en la terminal (asegúrate de usar la ruta base del proyecto `C:\Users\Equipo1\Documents\Antigravity\Projects\Herramientas_Htv`):
+   `py scripts\transcribir_audio.py "RUTA_DEL_AUDIO"`
    - Sustituye `"RUTA_DEL_AUDIO"` por la ruta analizada en el paso 1.
    - Usa `command_status` para esperar a que termine (puede tardar un poco dependiendo del audio, ya que utiliza el modelo Vosk local).
 
@@ -40,7 +41,7 @@ Asegúrate de recibir la ruta completa del audio como parámetro. Por ejemplo, a
 // turbo
 6. **Publicar en WordPress:**
    - Tras el OK del usuario, ejecuta el siguiente comando:
-   `python scripts\publicar_wp.py "noticia_generada.json"`
+   `py scripts\publicar_wp.py "noticia_generada.json"`
    - Esto subirá el contenido verificado a la web de Huelva TV.
 
 7. **Limpieza y Cierre:**

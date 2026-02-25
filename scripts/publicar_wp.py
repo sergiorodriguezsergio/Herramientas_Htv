@@ -6,7 +6,7 @@ from requests.auth import HTTPBasicAuth
 from datetime import datetime
 
 # Archivo seguro de la clave
-ARCHIVO_CLAVE = r"C:\Users\User\Desktop\clave_wp.txt"
+ARCHIVO_CLAVE = r"C:\Users\Equipo1\Desktop\clave_wp.txt"
 SITE_URL = "https://huelvatv.com/wp-json/wp/v2"
 USER = "Sergio"
 
